@@ -28,3 +28,4 @@ if ($failures.Count -gt 0) {
 }
 
 Write-Output "Public safety check passed: no forbidden tracked artifacts, personal paths, or credential patterns."
+exit 0

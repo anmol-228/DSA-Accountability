@@ -1,0 +1,84 @@
+{
+  "_comment": "Free-problem replacements per topic, used by leetcode_service when a scheduled problem unexpectedly becomes Premium-only. All entries below are free (non-Premium) as of curriculum authoring. difficulty is approximate.",
+  "arrays": [
+    {"leetcode_number": 27, "title": "Remove Element", "difficulty": "Easy"},
+    {"leetcode_number": 66, "title": "Plus One", "difficulty": "Easy"},
+    {"leetcode_number": 118, "title": "Pascal's Triangle", "difficulty": "Easy"},
+    {"leetcode_number": 152, "title": "Maximum Product Subarray", "difficulty": "Medium"}
+  ],
+  "strings": [
+    {"leetcode_number": 14, "title": "Longest Common Prefix", "difficulty": "Easy"},
+    {"leetcode_number": 28, "title": "Find the Index of the First Occurrence in a String", "difficulty": "Easy"},
+    {"leetcode_number": 151, "title": "Reverse Words in a String", "difficulty": "Medium"}
+  ],
+  "hashing": [
+    {"leetcode_number": 1, "title": "Two Sum", "difficulty": "Easy"},
+    {"leetcode_number": 387, "title": "First Unique Character in a String", "difficulty": "Easy"},
+    {"leetcode_number": 819, "title": "Most Common Word", "difficulty": "Easy"}
+  ],
+  "two_pointers": [
+    {"leetcode_number": 344, "title": "Reverse String", "difficulty": "Easy"},
+    {"leetcode_number": 125, "title": "Valid Palindrome", "difficulty": "Easy"},
+    {"leetcode_number": 167, "title": "Two Sum II - Input Array Is Sorted", "difficulty": "Medium"}
+  ],
+  "sliding_window": [
+    {"leetcode_number": 3, "title": "Longest Substring Without Repeating Characters", "difficulty": "Medium"},
+    {"leetcode_number": 76, "title": "Minimum Window Substring", "difficulty": "Hard"}
+  ],
+  "binary_search": [
+    {"leetcode_number": 704, "title": "Binary Search", "difficulty": "Easy"},
+    {"leetcode_number": 374, "title": "Guess Number Higher or Lower", "difficulty": "Easy"},
+    {"leetcode_number": 441, "title": "Arranging Coins", "difficulty": "Easy"}
+  ],
+  "linked_list": [
+    {"leetcode_number": 83, "title": "Remove Duplicates from Sorted List", "difficulty": "Easy"},
+    {"leetcode_number": 876, "title": "Middle of the Linked List", "difficulty": "Easy"},
+    {"leetcode_number": 21, "title": "Merge Two Sorted Lists", "difficulty": "Easy"}
+  ],
+  "stack": [
+    {"leetcode_number": 20, "title": "Valid Parentheses", "difficulty": "Easy"},
+    {"leetcode_number": 232, "title": "Implement Queue using Stacks", "difficulty": "Easy"}
+  ],
+  "queue": [
+    {"leetcode_number": 225, "title": "Implement Stack using Queues", "difficulty": "Easy"}
+  ],
+  "recursion": [
+    {"leetcode_number": 509, "title": "Fibonacci Number", "difficulty": "Easy"},
+    {"leetcode_number": 70, "title": "Climbing Stairs", "difficulty": "Easy"}
+  ],
+  "backtracking": [
+    {"leetcode_number": 46, "title": "Permutations", "difficulty": "Medium"},
+    {"leetcode_number": 78, "title": "Subsets", "difficulty": "Medium"}
+  ],
+  "trees": [
+    {"leetcode_number": 104, "title": "Maximum Depth of Binary Tree", "difficulty": "Easy"},
+    {"leetcode_number": 226, "title": "Invert Binary Tree", "difficulty": "Easy"},
+    {"leetcode_number": 111, "title": "Minimum Depth of Binary Tree", "difficulty": "Easy"}
+  ],
+  "bst": [
+    {"leetcode_number": 700, "title": "Search in a Binary Search Tree", "difficulty": "Easy"},
+    {"leetcode_number": 98, "title": "Validate Binary Search Tree", "difficulty": "Medium"}
+  ],
+  "heap": [
+    {"leetcode_number": 1046, "title": "Last Stone Weight", "difficulty": "Easy"},
+    {"leetcode_number": 703, "title": "Kth Largest Element in a Stream", "difficulty": "Easy"}
+  ],
+  "graphs": [
+    {"leetcode_number": 200, "title": "Number of Islands", "difficulty": "Medium"},
+    {"leetcode_number": 733, "title": "Flood Fill", "difficulty": "Easy"},
+    {"leetcode_number": 997, "title": "Find the Town Judge", "difficulty": "Easy"}
+  ],
+  "greedy": [
+    {"leetcode_number": 455, "title": "Assign Cookies", "difficulty": "Easy"},
+    {"leetcode_number": 1029, "title": "Two City Scheduling", "difficulty": "Medium"}
+  ],
+  "intervals": [
+    {"leetcode_number": 56, "title": "Merge Intervals", "difficulty": "Medium"},
+    {"leetcode_number": 57, "title": "Insert Interval", "difficulty": "Medium"}
+  ],
+  "dp": [
+    {"leetcode_number": 70, "title": "Climbing Stairs", "difficulty": "Easy"},
+    {"leetcode_number": 198, "title": "House Robber", "difficulty": "Medium"},
+    {"leetcode_number": 322, "title": "Coin Change", "difficulty": "Medium"}
+  ]
+}

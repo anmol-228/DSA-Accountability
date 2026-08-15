@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>DSA Accountability</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <h1>DSA Accountability</h1>
+  </header>
+
+  <section id="connection-section">
+    <div class="row">
+      <span>Desktop App</span>
+      <span id="conn-status" class="badge badge-unknown">Checking…</span>
+    </div>
+    <div class="row">
+      <span>Pairing</span>
+      <span id="pair-status" class="badge badge-unknown">Unknown</span>
+    </div>
+  </section>
+
+  <section id="pairing-form-section">
+    <label>Pairing token (from desktop app Settings)</label>
+    <input id="token-input" type="text" placeholder="paste pairing token" />
+    <label>Port</label>
+    <input id="port-input" type="number" value="8765" />
+    <button id="save-pairing-btn">Save &amp; Test Connection</button>
+  </section>
+
+  <section id="curriculum-section">
+    <div class="row"><strong id="current-day">Day — / 135</strong></div>
+    <div id="pending-tasks"></div>
+  </section>
+
+  <section id="watcher-section" style="display:none;">
+    <div class="row">
+      <span id="watcher-warning"></span>
+    </div>
+  </section>
+
+  <section id="submission-section">
+    <div class="row">
+      <span>Watching</span>
+      <span id="watch-status">Fresh submission</span>
+    </div>
+    <div class="row">
+      <span>Accepted</span>
+      <span id="accepted-status">Waiting…</span>
+    </div>
+    <button id="premium-blocked-btn" style="display:none;">This problem is Premium — request replacement</button>
+  </section>
+
+  <section id="debug-section">
+    <button id="toggle-debug-btn">Show debug log</button>
+    <pre id="debug-log" style="display:none;"></pre>
+  </section>
+
+  <script src="popup.js"></script>
+</body>
+</html>

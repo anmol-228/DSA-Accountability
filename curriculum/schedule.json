@@ -1,0 +1,3189 @@
+{
+  "days": [
+    {
+      "day": 1,
+      "title": "Java Fundamentals I",
+      "topic": "java_foundation",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "learn_group",
+          "title": "Learn",
+          "bullets": [
+            "Java program structure",
+            "main",
+            "variables",
+            "primitive data types",
+            "operators",
+            "input/output",
+            "Scanner",
+            "if/else"
+          ]
+        },
+        {
+          "kind": "exercise",
+          "title": "Even/Odd",
+          "filename": "EvenOdd"
+        },
+        {
+          "kind": "exercise",
+          "title": "Maximum of 3",
+          "filename": "MaximumOfThree"
+        },
+        {
+          "kind": "exercise",
+          "title": "Simple Calculator",
+          "filename": "SimpleCalculator"
+        },
+        {
+          "kind": "exercise",
+          "title": "Leap Year",
+          "filename": "LeapYear"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Java Fundamentals II",
+      "topic": "java_foundation",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "learn_group",
+          "title": "Learn",
+          "bullets": [
+            "for",
+            "while",
+            "methods",
+            "basic number logic"
+          ]
+        },
+        {
+          "kind": "exercise",
+          "title": "Factorial",
+          "filename": "Factorial"
+        },
+        {
+          "kind": "exercise",
+          "title": "Prime check",
+          "filename": "PrimeCheck"
+        },
+        {
+          "kind": "exercise",
+          "title": "Fibonacci",
+          "filename": "Fibonacci"
+        },
+        {
+          "kind": "exercise",
+          "title": "Reverse a number",
+          "filename": "ReverseNumber"
+        },
+        {
+          "kind": "exercise",
+          "title": "Palindrome number",
+          "filename": "PalindromeNumber"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Arrays I",
+      "topic": "java_foundation",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "learn_group",
+          "title": "Learn",
+          "bullets": [
+            "arrays",
+            "traversal",
+            "methods with arrays"
+          ]
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 1480,
+          "title": "Running Sum of 1d Array",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 1672,
+          "title": "Richest Customer Wealth",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "title": "Strings I",
+      "topic": "java_foundation",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "learn_group",
+          "title": "Learn",
+          "bullets": [
+            "String",
+            "char",
+            "StringBuilder"
+          ]
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 344,
+          "title": "Reverse String",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 125,
+          "title": "Valid Palindrome",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "title": "Collections I",
+      "topic": "java_foundation",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "learn_group",
+          "title": "Learn",
+          "bullets": [
+            "ArrayList",
+            "HashMap",
+            "HashSet"
+          ]
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 217,
+          "title": "Contains Duplicate",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 242,
+          "title": "Valid Anagram",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "title": "Big-O and Sorting Foundations",
+      "topic": "java_foundation",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "learn_group",
+          "title": "Learn",
+          "bullets": [
+            "Big-O: O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n log n)",
+            "O(n^2)"
+          ]
+        },
+        {
+          "kind": "exercise",
+          "title": "Bubble Sort",
+          "filename": "BubbleSort"
+        },
+        {
+          "kind": "exercise",
+          "title": "Selection Sort",
+          "filename": "SelectionSort"
+        },
+        {
+          "kind": "exercise",
+          "title": "Insertion Sort",
+          "filename": "InsertionSort"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "title": "Foundation Revision + Core CS Intro",
+      "topic": "java_foundation",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "repair",
+          "title": "Revision",
+          "note": "Re-code selected Day 3-6 work without help."
+        },
+        {
+          "kind": "concept",
+          "title": "Core CS Intro",
+          "bullets": [
+            "OOP",
+            "DBMS",
+            "OS",
+            "Computer Networks"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "title": "Arrays II",
+      "topic": "arrays",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 1,
+          "title": "Two Sum",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 121,
+          "title": "Best Time to Buy and Sell Stock",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "title": "Arrays III",
+      "topic": "arrays",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 53,
+          "title": "Maximum Subarray",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 88,
+          "title": "Merge Sorted Array",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "title": "Arrays IV",
+      "topic": "arrays",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 283,
+          "title": "Move Zeroes",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 26,
+          "title": "Remove Duplicates from Sorted Array",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "title": "Arrays V",
+      "topic": "arrays",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 189,
+          "title": "Rotate Array",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 169,
+          "title": "Majority Element",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "title": "Arrays VI",
+      "topic": "arrays",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 268,
+          "title": "Missing Number",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 448,
+          "title": "Find All Numbers Disappeared in an Array",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "title": "Prefix / Suffix",
+      "topic": "arrays",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 724,
+          "title": "Find Pivot Index",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 238,
+          "title": "Product of Array Except Self",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "title": "Arrays Timed Revision",
+      "topic": "arrays",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "revision",
+          "leetcode_number": 1,
+          "title": "Two Sum"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 121,
+          "title": "Best Time to Buy and Sell Stock"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 53,
+          "title": "Maximum Subarray"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 238,
+          "title": "Product of Array Except Self"
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "title": "Two Pointers I",
+      "topic": "two_pointers",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 167,
+          "title": "Two Sum II - Input Array Is Sorted",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 977,
+          "title": "Squares of a Sorted Array",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "title": "Two Pointers II",
+      "topic": "two_pointers",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 11,
+          "title": "Container With Most Water",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 15,
+          "title": "3Sum",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "title": "Two Pointers III",
+      "topic": "two_pointers",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 75,
+          "title": "Sort Colors",
+          "note": null
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 283,
+          "title": "Move Zeroes"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "title": "Sliding Window (Fixed)",
+      "topic": "sliding_window",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 643,
+          "title": "Maximum Average Subarray I",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 1456,
+          "title": "Maximum Number of Vowels in a Substring of Given Length",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "title": "Sliding Window (Variable)",
+      "topic": "sliding_window",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 209,
+          "title": "Minimum Size Subarray Sum",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 3,
+          "title": "Longest Substring Without Repeating Characters",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "title": "Sliding Window II",
+      "topic": "sliding_window",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 567,
+          "title": "Permutation in String",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 424,
+          "title": "Longest Repeating Character Replacement",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "title": "Sliding Window Revision",
+      "topic": "sliding_window",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 1004,
+          "title": "Max Consecutive Ones III",
+          "note": null
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 3,
+          "title": "Longest Substring Without Repeating Characters"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 15,
+          "title": "3Sum"
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "title": "Hashing I",
+      "topic": "hashing",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 349,
+          "title": "Intersection of Two Arrays",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 350,
+          "title": "Intersection of Two Arrays II",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "title": "Hashing II",
+      "topic": "hashing",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 49,
+          "title": "Group Anagrams",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 205,
+          "title": "Isomorphic Strings",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "title": "Hashing III",
+      "topic": "hashing",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 202,
+          "title": "Happy Number",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 290,
+          "title": "Word Pattern",
+          "note": null
+        },
+        {
+          "kind": "concept",
+          "title": "OOP Fundamentals",
+          "bullets": [
+            "class/object",
+            "constructor",
+            "encapsulation"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 25,
+      "title": "Prefix Sum + Hashing",
+      "topic": "hashing",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 560,
+          "title": "Subarray Sum Equals K",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 26,
+      "title": "Prefix Sum + Hashing II",
+      "topic": "hashing",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 525,
+          "title": "Contiguous Array",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 930,
+          "title": "Binary Subarrays With Sum",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 27,
+      "title": "Hashing IV",
+      "topic": "hashing",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 128,
+          "title": "Longest Consecutive Sequence",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 36,
+          "title": "Valid Sudoku",
+          "note": null
+        },
+        {
+          "kind": "concept",
+          "title": "OOP Revision",
+          "bullets": [
+            "inheritance",
+            "polymorphism",
+            "abstraction"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "title": "Hashing Timed Revision",
+      "topic": "hashing",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "revision",
+          "leetcode_number": 49,
+          "title": "Group Anagrams"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 560,
+          "title": "Subarray Sum Equals K"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 128,
+          "title": "Longest Consecutive Sequence"
+        }
+      ]
+    },
+    {
+      "day": 29,
+      "title": "Binary Search I",
+      "topic": "binary_search",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 704,
+          "title": "Binary Search",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 35,
+          "title": "Search Insert Position",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 30,
+      "title": "Binary Search II",
+      "topic": "binary_search",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 34,
+          "title": "Find First and Last Position of Element in Sorted Array",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 69,
+          "title": "Sqrt(x)",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 31,
+      "title": "Binary Search on Rotated Arrays",
+      "topic": "binary_search",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 153,
+          "title": "Find Minimum in Rotated Sorted Array",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 33,
+          "title": "Search in Rotated Sorted Array",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 32,
+      "title": "Binary Search III",
+      "topic": "binary_search",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 162,
+          "title": "Find Peak Element",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 74,
+          "title": "Search a 2D Matrix",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 33,
+      "title": "Binary Search on Answer I",
+      "topic": "binary_search",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 875,
+          "title": "Koko Eating Bananas",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 34,
+      "title": "Binary Search on Answer II",
+      "topic": "binary_search",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 1011,
+          "title": "Capacity To Ship Packages Within D Days",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 540,
+          "title": "Single Element in a Sorted Array",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 35,
+      "title": "Binary Search Revision",
+      "topic": "binary_search",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "revision",
+          "leetcode_number": 704,
+          "title": "Binary Search"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 34,
+          "title": "Find First and Last Position"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 33,
+          "title": "Search in Rotated Sorted Array"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 875,
+          "title": "Koko Eating Bananas"
+        }
+      ]
+    },
+    {
+      "day": 36,
+      "title": "Linked Lists I",
+      "topic": "linked_lists",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 206,
+          "title": "Reverse Linked List",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 876,
+          "title": "Middle of the Linked List",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 37,
+      "title": "Fast/Slow Pointers",
+      "topic": "linked_lists",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 141,
+          "title": "Linked List Cycle",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 142,
+          "title": "Linked List Cycle II",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 38,
+      "title": "Linked Lists II",
+      "topic": "linked_lists",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 21,
+          "title": "Merge Two Sorted Lists",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 83,
+          "title": "Remove Duplicates from Sorted List",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 39,
+      "title": "Linked Lists III",
+      "topic": "linked_lists",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 19,
+          "title": "Remove Nth Node From End of List",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 160,
+          "title": "Intersection of Two Linked Lists",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 40,
+      "title": "Linked Lists IV",
+      "topic": "linked_lists",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 234,
+          "title": "Palindrome Linked List",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 203,
+          "title": "Remove Linked List Elements",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 41,
+      "title": "Linked Lists V",
+      "topic": "linked_lists",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 2,
+          "title": "Add Two Numbers",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 328,
+          "title": "Odd Even Linked List",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 42,
+      "title": "Linked Lists Revision",
+      "topic": "linked_lists",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "revision",
+          "leetcode_number": 206,
+          "title": "Reverse Linked List"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 141,
+          "title": "Linked List Cycle"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 19,
+          "title": "Remove Nth Node From End of List"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 2,
+          "title": "Add Two Numbers"
+        },
+        {
+          "kind": "concept",
+          "title": "DBMS Introduction",
+          "bullets": [
+            "database/table",
+            "keys"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 43,
+      "title": "Stack I",
+      "topic": "stack_queue",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 20,
+          "title": "Valid Parentheses",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 155,
+          "title": "Min Stack",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 44,
+      "title": "Stack/Queue Interplay",
+      "topic": "stack_queue",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 225,
+          "title": "Implement Stack using Queues",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 232,
+          "title": "Implement Queue using Stacks",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 45,
+      "title": "Monotonic Stack I",
+      "topic": "stack_queue",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 496,
+          "title": "Next Greater Element I",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 503,
+          "title": "Next Greater Element II",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 46,
+      "title": "Monotonic Stack II",
+      "topic": "stack_queue",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 739,
+          "title": "Daily Temperatures",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 901,
+          "title": "Online Stock Span",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 47,
+      "title": "Monotonic Stack Challenge",
+      "topic": "stack_queue",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 84,
+          "title": "Largest Rectangle in Histogram",
+          "note": "Treat as a challenge/learning problem."
+        }
+      ]
+    },
+    {
+      "day": 48,
+      "title": "Stack Applications",
+      "topic": "stack_queue",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 150,
+          "title": "Evaluate Reverse Polish Notation",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 394,
+          "title": "Decode String",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 49,
+      "title": "Stack/Queue Revision",
+      "topic": "stack_queue",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "revision",
+          "leetcode_number": 20,
+          "title": "Valid Parentheses"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 739,
+          "title": "Daily Temperatures"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 84,
+          "title": "Largest Rectangle in Histogram"
+        }
+      ]
+    },
+    {
+      "day": 50,
+      "title": "Recursion Foundations",
+      "topic": "recursion",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "exercise",
+          "title": "Recursive factorial",
+          "filename": "RecursiveFactorial"
+        },
+        {
+          "kind": "exercise",
+          "title": "Recursive Fibonacci",
+          "filename": "RecursiveFibonacci"
+        },
+        {
+          "kind": "exercise",
+          "title": "Recursive power",
+          "filename": "RecursivePower"
+        },
+        {
+          "kind": "exercise",
+          "title": "Recursive array sum",
+          "filename": "RecursiveArraySum"
+        }
+      ]
+    },
+    {
+      "day": 51,
+      "title": "Backtracking I",
+      "topic": "recursion",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 78,
+          "title": "Subsets",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 46,
+          "title": "Permutations",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 52,
+      "title": "Backtracking II",
+      "topic": "recursion",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 77,
+          "title": "Combinations",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 39,
+          "title": "Combination Sum",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 53,
+      "title": "Backtracking III",
+      "topic": "recursion",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 40,
+          "title": "Combination Sum II",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 216,
+          "title": "Combination Sum III",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 54,
+      "title": "Backtracking IV",
+      "topic": "recursion",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 17,
+          "title": "Letter Combinations of a Phone Number",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 22,
+          "title": "Generate Parentheses",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 55,
+      "title": "Backtracking V",
+      "topic": "recursion",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 79,
+          "title": "Word Search",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 131,
+          "title": "Palindrome Partitioning",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 56,
+      "title": "Recursion/Backtracking Revision",
+      "topic": "recursion",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "revision",
+          "leetcode_number": 78,
+          "title": "Subsets"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 46,
+          "title": "Permutations"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 39,
+          "title": "Combination Sum"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 22,
+          "title": "Generate Parentheses"
+        }
+      ]
+    },
+    {
+      "day": 57,
+      "title": "Trees I",
+      "topic": "trees_1",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 104,
+          "title": "Maximum Depth of Binary Tree",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 100,
+          "title": "Same Tree",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 58,
+      "title": "Trees II",
+      "topic": "trees_1",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 226,
+          "title": "Invert Binary Tree",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 101,
+          "title": "Symmetric Tree",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 59,
+      "title": "Tree Traversals",
+      "topic": "trees_1",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 144,
+          "title": "Binary Tree Preorder Traversal",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 94,
+          "title": "Binary Tree Inorder Traversal",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 145,
+          "title": "Binary Tree Postorder Traversal",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 60,
+      "title": "Tree BFS",
+      "topic": "trees_1",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 102,
+          "title": "Binary Tree Level Order Traversal",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 111,
+          "title": "Minimum Depth of Binary Tree",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 61,
+      "title": "Trees III",
+      "topic": "trees_1",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 112,
+          "title": "Path Sum",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 543,
+          "title": "Diameter of Binary Tree",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 62,
+      "title": "Trees IV",
+      "topic": "trees_1",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 110,
+          "title": "Balanced Binary Tree",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 572,
+          "title": "Subtree of Another Tree",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 63,
+      "title": "Trees I Revision",
+      "topic": "trees_1",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "revision",
+          "leetcode_number": 104,
+          "title": "Maximum Depth of Binary Tree"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 102,
+          "title": "Binary Tree Level Order Traversal"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 543,
+          "title": "Diameter of Binary Tree"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 110,
+          "title": "Balanced Binary Tree"
+        },
+        {
+          "kind": "concept",
+          "title": "OS Introduction",
+          "bullets": [
+            "program/process/thread",
+            "scheduling"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 64,
+      "title": "Trees V",
+      "topic": "trees_2",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 199,
+          "title": "Binary Tree Right Side View",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 103,
+          "title": "Binary Tree Zigzag Level Order Traversal",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 65,
+      "title": "Tree Construction I",
+      "topic": "trees_2",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 105,
+          "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 66,
+      "title": "Tree Construction II",
+      "topic": "trees_2",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 106,
+          "title": "Construct Binary Tree from Inorder and Postorder Traversal",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 67,
+      "title": "Trees VI",
+      "topic": "trees_2",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 236,
+          "title": "Lowest Common Ancestor of a Binary Tree",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 437,
+          "title": "Path Sum III",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 68,
+      "title": "Trees VII",
+      "topic": "trees_2",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 129,
+          "title": "Sum Root to Leaf Numbers",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 662,
+          "title": "Maximum Width of Binary Tree",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 69,
+      "title": "Trees VIII",
+      "topic": "trees_2",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 114,
+          "title": "Flatten Binary Tree to Linked List",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 116,
+          "title": "Populating Next Right Pointers in Each Node",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 70,
+      "title": "Trees II Revision",
+      "topic": "trees_2",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "revision",
+          "leetcode_number": 105,
+          "title": "Construct Binary Tree from Preorder and Inorder Traversal"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 236,
+          "title": "Lowest Common Ancestor of a Binary Tree"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 437,
+          "title": "Path Sum III"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 114,
+          "title": "Flatten Binary Tree to Linked List"
+        }
+      ]
+    },
+    {
+      "day": 71,
+      "title": "BST I",
+      "topic": "bst",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 700,
+          "title": "Search in a Binary Search Tree",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 701,
+          "title": "Insert into a Binary Search Tree",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 72,
+      "title": "BST II",
+      "topic": "bst",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 98,
+          "title": "Validate Binary Search Tree",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 230,
+          "title": "Kth Smallest Element in a BST",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 73,
+      "title": "BST III",
+      "topic": "bst",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 235,
+          "title": "Lowest Common Ancestor of a Binary Search Tree",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 530,
+          "title": "Minimum Absolute Difference in BST",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 74,
+      "title": "BST IV",
+      "topic": "bst",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 450,
+          "title": "Delete Node in a BST",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 75,
+      "title": "BST V",
+      "topic": "bst",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 108,
+          "title": "Convert Sorted Array to Binary Search Tree",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 653,
+          "title": "Two Sum IV - Input is a BST",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 76,
+      "title": "BST VI",
+      "topic": "bst",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 173,
+          "title": "Binary Search Tree Iterator",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 669,
+          "title": "Trim a Binary Search Tree",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 77,
+      "title": "Tree Mock + OS",
+      "topic": "bst",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "revision",
+          "leetcode_number": 102,
+          "title": "Binary Tree Level Order Traversal"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 98,
+          "title": "Validate Binary Search Tree"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 236,
+          "title": "Lowest Common Ancestor of a Binary Tree"
+        },
+        {
+          "kind": "concept",
+          "title": "OS Deep Dive",
+          "bullets": [
+            "deadlock",
+            "semaphore",
+            "mutex",
+            "paging",
+            "virtual memory",
+            "page fault"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 78,
+      "title": "Heap I",
+      "topic": "heap",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 703,
+          "title": "Kth Largest Element in a Stream",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 1046,
+          "title": "Last Stone Weight",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 79,
+      "title": "Heap II",
+      "topic": "heap",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 215,
+          "title": "Kth Largest Element in an Array",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 347,
+          "title": "Top K Frequent Elements",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 80,
+      "title": "Heap III",
+      "topic": "heap",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 973,
+          "title": "K Closest Points to Origin",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 451,
+          "title": "Sort Characters By Frequency",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 81,
+      "title": "Heap IV",
+      "topic": "heap",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 692,
+          "title": "Top K Frequent Words",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 373,
+          "title": "Find K Pairs with Smallest Sums",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 82,
+      "title": "Heap V",
+      "topic": "heap",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 767,
+          "title": "Reorganize String",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 621,
+          "title": "Task Scheduler",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 83,
+      "title": "Heap VI",
+      "topic": "heap",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 23,
+          "title": "Merge k Sorted Lists",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 84,
+      "title": "Heap Revision",
+      "topic": "heap",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "revision",
+          "leetcode_number": 215,
+          "title": "Kth Largest Element in an Array"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 973,
+          "title": "K Closest Points to Origin"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 621,
+          "title": "Task Scheduler"
+        }
+      ]
+    },
+    {
+      "day": 85,
+      "title": "Graphs I",
+      "topic": "graphs_1",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 733,
+          "title": "Flood Fill",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 200,
+          "title": "Number of Islands",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 86,
+      "title": "Graphs II",
+      "topic": "graphs_1",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 695,
+          "title": "Max Area of Island",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 463,
+          "title": "Island Perimeter",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 87,
+      "title": "Graphs III",
+      "topic": "graphs_1",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 994,
+          "title": "Rotting Oranges",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 542,
+          "title": "01 Matrix",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 88,
+      "title": "Graphs IV",
+      "topic": "graphs_1",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 547,
+          "title": "Number of Provinces",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 841,
+          "title": "Keys and Rooms",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 89,
+      "title": "Graphs V",
+      "topic": "graphs_1",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 797,
+          "title": "All Paths From Source to Target",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 1971,
+          "title": "Find if Path Exists in Graph",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 90,
+      "title": "Graphs VI (Bipartite)",
+      "topic": "graphs_1",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 785,
+          "title": "Is Graph Bipartite?",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 886,
+          "title": "Possible Bipartition",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 91,
+      "title": "Graphs I Revision",
+      "topic": "graphs_1",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "revision",
+          "leetcode_number": 200,
+          "title": "Number of Islands"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 994,
+          "title": "Rotting Oranges"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 547,
+          "title": "Number of Provinces"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 785,
+          "title": "Is Graph Bipartite?"
+        }
+      ]
+    },
+    {
+      "day": 92,
+      "title": "Topological Sort",
+      "topic": "graphs_2",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 207,
+          "title": "Course Schedule",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 210,
+          "title": "Course Schedule II",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 93,
+      "title": "Union Find",
+      "topic": "graphs_2",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 684,
+          "title": "Redundant Connection",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 1319,
+          "title": "Number of Operations to Make Network Connected",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 94,
+      "title": "Graphs VII",
+      "topic": "graphs_2",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 802,
+          "title": "Find Eventual Safe States",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 133,
+          "title": "Clone Graph",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 95,
+      "title": "BFS Shortest Path",
+      "topic": "graphs_2",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 1091,
+          "title": "Shortest Path in Binary Matrix",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 752,
+          "title": "Open the Lock",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 96,
+      "title": "Dijkstra",
+      "topic": "graphs_2",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 743,
+          "title": "Network Delay Time",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 97,
+      "title": "Weighted Graphs",
+      "topic": "graphs_2",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 1631,
+          "title": "Path With Minimum Effort",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 1514,
+          "title": "Path with Maximum Probability",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 98,
+      "title": "Graphs II Revision + CN Intro",
+      "topic": "graphs_2",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "revision",
+          "leetcode_number": 207,
+          "title": "Course Schedule"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 684,
+          "title": "Redundant Connection"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 1091,
+          "title": "Shortest Path in Binary Matrix"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 743,
+          "title": "Network Delay Time"
+        },
+        {
+          "kind": "concept",
+          "title": "Computer Networks Intro",
+          "bullets": [
+            "OSI",
+            "TCP/IP",
+            "IP",
+            "MAC",
+            "DNS",
+            "HTTP",
+            "HTTPS",
+            "TCP vs UDP"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 99,
+      "title": "Greedy I",
+      "topic": "greedy_intervals",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 455,
+          "title": "Assign Cookies",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 55,
+          "title": "Jump Game",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 100,
+      "title": "Greedy II",
+      "topic": "greedy_intervals",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 45,
+          "title": "Jump Game II",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 860,
+          "title": "Lemonade Change",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 101,
+      "title": "Intervals I",
+      "topic": "greedy_intervals",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 56,
+          "title": "Merge Intervals",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 435,
+          "title": "Non-overlapping Intervals",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 102,
+      "title": "Intervals II",
+      "topic": "greedy_intervals",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 57,
+          "title": "Insert Interval",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 452,
+          "title": "Minimum Number of Arrows to Burst Balloons",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 103,
+      "title": "Greedy III",
+      "topic": "greedy_intervals",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 763,
+          "title": "Partition Labels",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 134,
+          "title": "Gas Station",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 104,
+      "title": "Greedy IV",
+      "topic": "greedy_intervals",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 881,
+          "title": "Boats to Save People",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 1029,
+          "title": "Two City Scheduling",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 105,
+      "title": "Greedy/Intervals Revision",
+      "topic": "greedy_intervals",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "revision",
+          "leetcode_number": 55,
+          "title": "Jump Game"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 56,
+          "title": "Merge Intervals"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 435,
+          "title": "Non-overlapping Intervals"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 134,
+          "title": "Gas Station"
+        }
+      ]
+    },
+    {
+      "day": 106,
+      "title": "DP Foundations",
+      "topic": "dp_1",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "learn_group",
+          "title": "Learn",
+          "bullets": [
+            "Recursion -> Memoization -> Tabulation -> Space Optimization"
+          ]
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 70,
+          "title": "Climbing Stairs",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 746,
+          "title": "Min Cost Climbing Stairs",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 107,
+      "title": "DP: House Robber",
+      "topic": "dp_1",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 198,
+          "title": "House Robber",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 213,
+          "title": "House Robber II",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 108,
+      "title": "DP: Coin Change",
+      "topic": "dp_1",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 322,
+          "title": "Coin Change",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 518,
+          "title": "Coin Change II",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 109,
+      "title": "DP: Strings",
+      "topic": "dp_1",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 139,
+          "title": "Word Break",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 91,
+          "title": "Decode Ways",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 110,
+      "title": "DP: LIS",
+      "topic": "dp_1",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 300,
+          "title": "Longest Increasing Subsequence",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 673,
+          "title": "Number of Longest Increasing Subsequence",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 111,
+      "title": "DP I Misc",
+      "topic": "dp_1",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 279,
+          "title": "Perfect Squares",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 377,
+          "title": "Combination Sum IV",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 112,
+      "title": "DP I Revision",
+      "topic": "dp_1",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "revision",
+          "leetcode_number": 70,
+          "title": "Climbing Stairs"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 198,
+          "title": "House Robber"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 322,
+          "title": "Coin Change"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 300,
+          "title": "Longest Increasing Subsequence"
+        }
+      ]
+    },
+    {
+      "day": 113,
+      "title": "DP: Grid Paths I",
+      "topic": "dp_2",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 62,
+          "title": "Unique Paths",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 63,
+          "title": "Unique Paths II",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 114,
+      "title": "DP: Grid Paths II",
+      "topic": "dp_2",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 64,
+          "title": "Minimum Path Sum",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 120,
+          "title": "Triangle",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 115,
+      "title": "DP: LCS Family",
+      "topic": "dp_2",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 1143,
+          "title": "Longest Common Subsequence",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 516,
+          "title": "Longest Palindromic Subsequence",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 116,
+      "title": "DP: Subset Sum Family",
+      "topic": "dp_2",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 416,
+          "title": "Partition Equal Subset Sum",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 494,
+          "title": "Target Sum",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 117,
+      "title": "DP: Knapsack Variants",
+      "topic": "dp_2",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 474,
+          "title": "Ones and Zeroes",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 1049,
+          "title": "Last Stone Weight II",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 118,
+      "title": "DP: 2D Strings",
+      "topic": "dp_2",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 72,
+          "title": "Edit Distance",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 221,
+          "title": "Maximal Square",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 119,
+      "title": "DP II Revision",
+      "topic": "dp_2",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "revision",
+          "leetcode_number": 198,
+          "title": "House Robber"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 322,
+          "title": "Coin Change"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 1143,
+          "title": "Longest Common Subsequence"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 416,
+          "title": "Partition Equal Subset Sum"
+        }
+      ]
+    },
+    {
+      "day": 120,
+      "title": "Mixed Interview Mode I",
+      "topic": "mixed_interview",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 219,
+          "title": "Contains Duplicate II",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 238,
+          "title": "Product of Array Except Self",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 560,
+          "title": "Subarray Sum Equals K",
+          "note": "Require explanations. Hide topic/pattern until attempt ends."
+        }
+      ]
+    },
+    {
+      "day": 121,
+      "title": "Mixed Interview Mode II",
+      "topic": "mixed_interview",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 148,
+          "title": "Sort List",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 143,
+          "title": "Reorder List",
+          "note": null
+        },
+        {
+          "kind": "concept",
+          "title": "OOP Full Revision",
+          "bullets": [
+            "pillars",
+            "overload vs override",
+            "abstract class vs interface"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 122,
+      "title": "Mixed Interview Mode III",
+      "topic": "mixed_interview",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 1448,
+          "title": "Count Good Nodes in Binary Tree",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 199,
+          "title": "Binary Tree Right Side View",
+          "note": null
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 236,
+          "title": "Lowest Common Ancestor of a Binary Tree"
+        },
+        {
+          "kind": "concept",
+          "title": "OS Revision",
+          "bullets": [
+            "process vs thread",
+            "deadlock",
+            "paging"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 123,
+      "title": "Mixed Interview Mode IV",
+      "topic": "mixed_interview",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 909,
+          "title": "Snakes and Ladders",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 399,
+          "title": "Evaluate Division",
+          "note": null
+        },
+        {
+          "kind": "concept",
+          "title": "Networks Revision",
+          "bullets": [
+            "TCP vs UDP",
+            "HTTP vs HTTPS",
+            "DNS"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 124,
+      "title": "Mixed Interview Mode V",
+      "topic": "mixed_interview",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 337,
+          "title": "House Robber III",
+          "note": null
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 64,
+          "title": "Minimum Path Sum"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 322,
+          "title": "Coin Change"
+        },
+        {
+          "kind": "concept",
+          "title": "DBMS/SQL",
+          "bullets": [
+            "joins",
+            "normalization",
+            "ACID",
+            "SELECT/WHERE/GROUP BY/HAVING"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 125,
+      "title": "OA #1",
+      "topic": "mixed_interview",
+      "is_oa": true,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "oa",
+          "title": "OA #1",
+          "minutes": 90,
+          "problems": [
+            {
+              "kind": "leetcode",
+              "leetcode_number": 1768,
+              "title": "Merge Strings Alternately",
+              "note": null
+            },
+            {
+              "kind": "leetcode",
+              "leetcode_number": 49,
+              "title": "Group Anagrams",
+              "note": null
+            },
+            {
+              "kind": "leetcode",
+              "leetcode_number": 215,
+              "title": "Kth Largest Element in an Array",
+              "note": null
+            }
+          ],
+          "note": "No topic hints."
+        }
+      ]
+    },
+    {
+      "day": 126,
+      "title": "Repair Day",
+      "topic": "mixed_interview",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "repair",
+          "title": "Repair Day",
+          "note": "Automatically choose five highest-priority weak problems based on: 1) Red confidence, 2) repeated failure, 3) important interview pattern, 4) overdue revision. Selected at runtime by recovery_service."
+        }
+      ]
+    },
+    {
+      "day": 127,
+      "title": "OA #2",
+      "topic": "interview_training",
+      "is_oa": true,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "oa",
+          "title": "OA #2",
+          "minutes": 90,
+          "problems": [
+            {
+              "kind": "leetcode",
+              "leetcode_number": 121,
+              "title": "Best Time to Buy and Sell Stock",
+              "note": null
+            },
+            {
+              "kind": "leetcode",
+              "leetcode_number": 739,
+              "title": "Daily Temperatures",
+              "note": null
+            },
+            {
+              "kind": "leetcode",
+              "leetcode_number": 207,
+              "title": "Course Schedule",
+              "note": null
+            }
+          ],
+          "note": "Require: approach, time complexity, space complexity, edge cases."
+        }
+      ]
+    },
+    {
+      "day": 128,
+      "title": "Interview Training I",
+      "topic": "interview_training",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 658,
+          "title": "Find K Closest Elements",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 853,
+          "title": "Car Fleet",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 129,
+      "title": "Interview Training II",
+      "topic": "interview_training",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 138,
+          "title": "Copy List with Random Pointer",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 146,
+          "title": "LRU Cache",
+          "note": "Treat as a high-value learning problem."
+        }
+      ]
+    },
+    {
+      "day": 130,
+      "title": "Interview Training III",
+      "topic": "interview_training",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 1448,
+          "title": "Count Good Nodes in Binary Tree",
+          "note": null
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 230,
+          "title": "Kth Smallest Element in a BST"
+        },
+        {
+          "kind": "revision",
+          "leetcode_number": 102,
+          "title": "Binary Tree Level Order Traversal"
+        }
+      ]
+    },
+    {
+      "day": 131,
+      "title": "Interview Training IV",
+      "topic": "interview_training",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 721,
+          "title": "Accounts Merge",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 127,
+          "title": "Word Ladder",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 132,
+      "title": "Interview Training V",
+      "topic": "interview_training",
+      "is_oa": false,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "leetcode",
+          "leetcode_number": 647,
+          "title": "Palindromic Substrings",
+          "note": null
+        },
+        {
+          "kind": "leetcode",
+          "leetcode_number": 309,
+          "title": "Best Time to Buy and Sell Stock with Cooldown",
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 133,
+      "title": "OA #3",
+      "topic": "interview_training",
+      "is_oa": true,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "oa",
+          "title": "OA #3",
+          "minutes": 90,
+          "problems": [
+            {
+              "kind": "leetcode",
+              "leetcode_number": 53,
+              "title": "Maximum Subarray",
+              "note": null
+            },
+            {
+              "kind": "leetcode",
+              "leetcode_number": 435,
+              "title": "Non-overlapping Intervals",
+              "note": null
+            },
+            {
+              "kind": "leetcode",
+              "leetcode_number": 994,
+              "title": "Rotting Oranges",
+              "note": null
+            }
+          ],
+          "note": null
+        }
+      ]
+    },
+    {
+      "day": 134,
+      "title": "Full Technical Mock",
+      "topic": "final_mock",
+      "is_oa": false,
+      "is_mock": true,
+      "items": [
+        {
+          "kind": "mock",
+          "title": "Full Technical Mock",
+          "items": [
+            {
+              "problem": {
+                "kind": "leetcode",
+                "leetcode_number": 15,
+                "title": "3Sum",
+                "note": null
+              },
+              "target_minutes": 40,
+              "require": [
+                "brute force",
+                "optimization",
+                "complexity",
+                "implementation",
+                "edge cases"
+              ]
+            },
+            {
+              "problem": {
+                "kind": "leetcode",
+                "leetcode_number": 102,
+                "title": "Binary Tree Level Order Traversal",
+                "note": null
+              },
+              "target_minutes": 30
+            }
+          ],
+          "note": "Core CS rapid fire: OOP pillars, overload vs override, abstract class vs interface, primary/foreign key, normalization, joins, ACID, process vs thread, deadlock, paging, TCP vs UDP, HTTP vs HTTPS, DNS. Plus: 'Tell me about your strongest project.'"
+        }
+      ]
+    },
+    {
+      "day": 135,
+      "title": "Final Benchmark",
+      "topic": "final_mock",
+      "is_oa": true,
+      "is_mock": false,
+      "items": [
+        {
+          "kind": "oa",
+          "title": "Final Benchmark OA",
+          "minutes": 90,
+          "problems": [
+            {
+              "kind": "leetcode",
+              "leetcode_number": 3,
+              "title": "Longest Substring Without Repeating Characters",
+              "note": null
+            },
+            {
+              "kind": "leetcode",
+              "leetcode_number": 215,
+              "title": "Kth Largest Element in an Array",
+              "note": null
+            },
+            {
+              "kind": "leetcode",
+              "leetcode_number": 207,
+              "title": "Course Schedule",
+              "note": null
+            }
+          ],
+          "note": "Internally tests Sliding Window, Heap, Topological Sort. Do not reveal labels before attempt. Produce final report after completion."
+        }
+      ]
+    }
+  ]
+}

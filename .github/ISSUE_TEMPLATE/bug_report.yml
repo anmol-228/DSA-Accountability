@@ -1,0 +1,34 @@
+name: Bug report
+description: Report a reproducible problem without including private data.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Never paste pairing tokens, databases, learner source, credentials, or private paths.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: 1.1.0 and embedded commit if available
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include safe reproduction steps, expected behavior, and actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: Safe diagnostics
+      description: Windows/Python/Java/Chrome versions and sanitized errors only.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Privacy check
+      options:
+        - label: I removed tokens, credentials, personal paths, databases, logs, and private learner code.
+          required: true

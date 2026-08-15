@@ -1,0 +1,51 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.coverage
+htmlcov/
+
+# Build and release output
+build/
+dist/
+release/
+*.spec
+
+# Runtime/user data (never publish)
+data/
+backups/
+logs/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.db
+.env
+.env.*
+!.env.example
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Integration/diagnostic artifacts
+.integration-test/
+integration-test/
+integration-tests/
+*.log
+*.tmp
+*.bak
+CODEX_HANDOFF/
+CODEX_SUPERVISOR_PACKAGE.zip
+CODEX_*.md
+CODEX_*.json
+DSA_ACCOUNTABILITY_FINAL_VERIFIED_STATE_*.md
+FINAL_REPAIR_PROGRESS.md
+HANDOFF.md
+PROJECT_STATE.md
+PUBLICATION_*.md
+PUBLIC_*.md

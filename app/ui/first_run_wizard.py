@@ -117,6 +117,15 @@ class FirstRunWizard(QDialog):
         layout.addWidget(self.startup_cb)
         layout.addWidget(Divider())
 
+        # Token must exist BEFORE run_checks() evaluates the "Chrome
+        # extension" line below -- otherwise that check sees no token row
+        # yet and reports "Token not generated" in the very same dialog
+        # that displays a real, just-created token a few widgets down
+        # (contradictory-state bug, found and fixed 2026-08-16; ported
+        # forward from the flexible-engine branch where it was first found
+        # -- this bug predates and is unrelated to that branch's UI model).
+        token = pairing_service.get_or_create_token(conn)
+
         for label, ok, detail in run_checks(conn):
             row = QHBoxLayout()
             row.addWidget(QLabel(label))
@@ -124,7 +133,6 @@ class FirstRunWizard(QDialog):
             row.addWidget(StatusChip(detail, kind="success" if ok else "warning"))
             layout.addLayout(row)
 
-        token = pairing_service.get_or_create_token(conn)
         layout.addWidget(Divider())
         layout.addWidget(QLabel("Chrome extension pairing token (keep private)"))
         token_label = QLabel(token)

@@ -76,7 +76,15 @@ def generate_required_today(conn: sqlite3.Connection, day_number: int,
     created_task_ids = []
     for r in due:
         problem = conn.execute("SELECT * FROM problems WHERE id = ?", (r["problem_id"],)).fetchone()
-        title = f"Revision - LC {problem['leetcode_number']} {problem['title']}" if problem else "Revision"
+        # Interval-stage suffix disambiguates same-problem revision rows: a
+        # single Red-confidence solve schedules several future stages
+        # (1/3/7/21/45 days out), and if two land due the same day and both
+        # get promoted, an undisambiguated title would render two
+        # visually-identical task rows for the same problem.
+        title = (
+            f"Revision - LC {problem['leetcode_number']} {problem['title']} (stage {r['interval_stage']})"
+            if problem else "Revision"
+        )
         task_cur = conn.execute(
             "INSERT INTO tasks (day_number, task_type, title, problem_id, required, generated) "
             "VALUES (?, 'revision', ?, ?, 1, 1)",

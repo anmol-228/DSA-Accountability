@@ -20,6 +20,12 @@ class TestCase:
     stdin: str
     check: Callable[[str], bool]
     expected_label: str
+    # Additional stdin orderings to accept as equally valid, tried in order
+    # after `stdin` if it doesn't pass. Only ever set for an exercise whose
+    # own scaffold comment doesn't disambiguate input order (see
+    # SimpleCalculator below) -- every other exercise leaves this empty and
+    # is completely unaffected.
+    stdin_alternates: tuple[str, ...] = ()
 
 
 @dataclass
@@ -90,6 +96,18 @@ def _number_case(stdin: str, expect: int, description: str | None = None) -> Tes
                      lambda out: _matches_number(out, expect), str(expect))
 
 
+def _calculator_case(num1: int, num2: int, op: str, expect: int, description: str) -> TestCase:
+    """SimpleCalculator's own scaffold comment ("Read two numbers and an
+    operator, print the result") never specified a read order -- both
+    number/operator/number and number/number/operator are equally valid
+    readings of it, and real historical learner code has used the latter.
+    Accept either: try number/operator/number first (the original test
+    convention), then number/number/operator."""
+    primary = f"{num1}\n{op}\n{num2}\n"
+    alternate = f"{num1}\n{num2}\n{op}\n"
+    return TestCase(description, primary, lambda out: _matches_number(out, expect), str(expect), (alternate,))
+
+
 EXERCISE_TEST_SPECS: dict[str, list[TestCase]] = {
     "EvenOdd": [
         _even_odd_case("4\n", "even"),
@@ -110,10 +128,10 @@ EXERCISE_TEST_SPECS: dict[str, list[TestCase]] = {
         _leap_case("2000\n", True),   # divisible by 400 -> leap despite being a century year
     ],
     "SimpleCalculator": [
-        _number_case("10\n+\n5\n", 15, "10 + 5"),
-        _number_case("10\n-\n5\n", 5, "10 - 5"),
-        _number_case("10\n*\n5\n", 50, "10 * 5"),
-        _number_case("10\n/\n5\n", 2, "10 / 5"),
+        _calculator_case(10, 5, "+", 15, "10 + 5"),
+        _calculator_case(10, 5, "-", 5, "10 - 5"),
+        _calculator_case(10, 5, "*", 50, "10 * 5"),
+        _calculator_case(10, 5, "/", 2, "10 / 5"),
     ],
 }
 
@@ -131,15 +149,30 @@ def run_functional_tests(canonical_filename: str, class_name: str, build_dir,
     results = []
     passed = 0
     for case in cases:
-        run = build_service.run_java_class(class_name, build_dir, case.stdin, timeout=run_timeout)
-        if run.timed_out:
-            results.append(TestCaseResult(case.description, False, case.stdin, case.expected_label,
-                                           "(timed out)", timed_out=True))
-            continue
-        ok = run.ok and case.check(run.stdout)
-        if ok:
+        # Try the primary stdin first, then any accepted alternate orderings
+        # (see TestCase.stdin_alternates) -- pass on the first one that
+        # succeeds; if none succeed, report the primary attempt's failure
+        # (most representative/first-documented ordering) for debugging.
+        first_attempt: TestCaseResult | None = None
+        case_passed = False
+        for stdin in (case.stdin, *case.stdin_alternates):
+            run = build_service.run_java_class(class_name, build_dir, stdin, timeout=run_timeout)
+            if run.timed_out:
+                attempt = TestCaseResult(case.description, False, stdin, case.expected_label,
+                                          "(timed out)", timed_out=True)
+            else:
+                ok = run.ok and case.check(run.stdout)
+                attempt = TestCaseResult(case.description, ok, stdin, case.expected_label,
+                                          run.stdout.strip() or "(no output)")
+            if first_attempt is None:
+                first_attempt = attempt
+            if attempt.passed:
+                case_passed = True
+                first_attempt = attempt  # report the ordering that actually worked
+                break
+
+        if case_passed:
             passed += 1
-        results.append(TestCaseResult(case.description, ok, case.stdin, case.expected_label,
-                                       run.stdout.strip() or "(no output)"))
+        results.append(first_attempt)
 
     return TestSuiteResult(defined=True, total=len(cases), passed=passed, results=results)

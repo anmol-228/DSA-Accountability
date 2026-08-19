@@ -12,6 +12,7 @@ from pathlib import Path
 from app import config
 from app.services import (
     code_sync_service,
+    docs_sync_service,
     git_service,
     github_sync_service,
     integration_test_service,
@@ -210,6 +211,7 @@ def finalize_leetcode_task(
             revision_service.schedule_revision(conn, problem["id"], reflection["confidence"])
 
         streak_service.record_meaningful_activity(conn)
+        result["docs_sync"] = docs_sync_service.sync_and_commit(conn, repo_root)
 
     return result
 
@@ -262,6 +264,8 @@ def finalize_simple_task(conn: sqlite3.Connection, task_id: int, note: str | Non
     day_completed = prog.complete_task(conn, task_id)
     result["day_completed"] = day_completed
     streak_service.record_meaningful_activity(conn)
+    if commit_files:
+        result["docs_sync"] = docs_sync_service.sync_and_commit(conn, repo_root)
     return result
 
 
@@ -330,6 +334,7 @@ def finalize_exercise_task(conn: sqlite3.Connection, task_id: int, note: str,
 
         result["day_completed"] = prog.complete_task(conn, task_id)
         streak_service.record_meaningful_activity(conn)
+        result["docs_sync"] = docs_sync_service.sync_and_commit(conn, repo_root)
 
     return result
 

@@ -200,6 +200,43 @@ def test_real_correct_solution_passes_all_functional_tests(class_name, tmp_path,
     assert suite.all_passed, [r for r in suite.results if not r.passed]
 
 
+_SIMPLE_CALCULATOR_NUMBER_NUMBER_OPERATOR = """
+    import java.util.Scanner;
+    public class SimpleCalculator {
+        public static void main(String[] a) {
+            Scanner sc = new Scanner(System.in);
+            int num1 = sc.nextInt();
+            int num2 = sc.nextInt();
+            String op = sc.next();
+            int result = switch (op) { case "+" -> num1+num2; case "-" -> num1-num2;
+                                        case "*" -> num1*num2; default -> num1/num2; };
+            System.out.println("Result: " + result);
+        }
+    }
+"""
+
+
+def test_simple_calculator_accepts_number_number_operator_order_too(tmp_path, isolated_build_root):
+    """SimpleCalculator's scaffold comment ("Read two numbers and an
+    operator, print the result") never specified a read order. A solution
+    that reads number/number/operator is an equally valid reading of that
+    comment and must pass -- not just the number/operator/number ordering
+    the original test cases happened to use first. Real historical learner
+    code used this exact ordering."""
+    src = tmp_path / "SimpleCalculator.java"
+    src.write_text(_SIMPLE_CALCULATOR_NUMBER_NUMBER_OPERATOR)
+    result = build_service.compile_java(src, "SimpleCalculator")
+    assert result.success, result.summary
+    suite = exercise_tests.run_functional_tests("SimpleCalculator", "SimpleCalculator", result.build_dir)
+    assert suite.defined
+    assert suite.all_passed, [r for r in suite.results if not r.passed]
+    # Every case should report the alternate (number/number/operator) stdin
+    # as the one that actually passed, proving the fallback path was
+    # genuinely exercised, not just present-but-unused.
+    for r in suite.results:
+        assert r.stdin.strip().splitlines()[-1] in ("+", "-", "*", "/"), r.stdin
+
+
 def test_leap_year_century_rule_actually_verified(tmp_path, isolated_build_root):
     """Regression guard for the specific case the spec calls out: a
     solution missing the century exception must fail on 1900."""

@@ -132,9 +132,20 @@ def test_migration_failure_does_not_wipe_existing_db(tmp_path, monkeypatch):
     conn.commit()
     conn.close()
 
+    # The broken migration's own version number must be one past whatever
+    # real migrations already applied above -- otherwise the runner sees it
+    # as an already-applied version and silently skips it instead of
+    # running (and failing on) it. Computed from the real migrations
+    # directory rather than hardcoded, so this test doesn't need updating
+    # again every time a new real migration is added.
+    real_max_version = max(
+        int(f.name.split("_")[0]) for f in app_config.MIGRATIONS_DIR.glob("*.sql")
+    )
+    next_version = real_max_version + 1
+
     bad_migrations_dir = tmp_path / "bad_migrations"
     bad_migrations_dir.mkdir()
-    (bad_migrations_dir / "003_broken.sql").write_text(
+    (bad_migrations_dir / f"{next_version:03d}_broken.sql").write_text(
         "INSERT INTO settings (key, value) VALUES ('should_not_persist', 'x');\n"
         "THIS IS NOT VALID SQL AND WILL FAIL;\n",
         encoding="utf-8",
@@ -143,7 +154,7 @@ def test_migration_failure_does_not_wipe_existing_db(tmp_path, monkeypatch):
 
     with pytest.raises(database.MigrationError) as exc_info:
         database.run_migrations(db_path)
-    assert exc_info.value.version == 3
+    assert exc_info.value.version == next_version
     assert exc_info.value.backup_path is not None
     assert exc_info.value.backup_path.exists()
 

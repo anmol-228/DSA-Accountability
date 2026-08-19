@@ -68,6 +68,60 @@ def test_retry_does_not_create_duplicate_commit(seeded_conn, tmp_path):
     assert commit_count == 1
 
 
+def test_real_push_then_transient_failure_then_restart_retry_succeeds_no_duplicate(seeded_conn, tmp_path):
+    """Real (non-mocked) end-to-end proof, using a local bare repo as the
+    remote so this never touches network/GitHub: a genuine `git push`
+    actually lands the commit on the remote, a transient failure (remote
+    briefly misconfigured) correctly stays queued rather than being
+    dropped, and a fresh attempt_push call afterward -- exactly what
+    happens on the next app launch/timer tick, not a special "retry" code
+    path -- succeeds and pushes the SAME commit exactly once, never
+    duplicating it."""
+    conn = seeded_conn
+    repo_root = tmp_path / "repo"
+    commit = _init_committed_repo(repo_root)
+
+    bare_remote = tmp_path / "bare-remote.git"
+    git_service._run(["init", "--bare", str(bare_remote)], cwd=tmp_path)
+
+    cur = conn.execute(
+        "INSERT INTO git_commits (repo_path, commit_hash, message, files_json, created_at) "
+        "VALUES (?, ?, ?, '[]', datetime('now'))",
+        (str(repo_root), commit.commit_hash, "initial commit"),
+    )
+    conn.commit()
+    queue_id = github_sync_service.enqueue_push(conn, cur.lastrowid)
+
+    # Transient failure: remote briefly points nowhere reachable.
+    git_service.add_remote(repo_root, "https://127.0.0.1:1/definitely-not-a-real-host/repo.git")
+    assert github_sync_service.attempt_push(conn, queue_id, repo_root) is False
+    row = conn.execute("SELECT status, attempts FROM github_push_queue WHERE id = ?", (queue_id,)).fetchone()
+    assert row["status"] == "pending"
+    assert row["attempts"] == 1
+
+    # "Restart": remote is fixed (as if the user reconnected/reconfigured),
+    # and the next drain call is a fresh, independent attempt_push call --
+    # not a special retry function, the same one every periodic drain uses.
+    git_service._run(["remote", "set-url", "origin", str(bare_remote)], cwd=repo_root)
+    assert github_sync_service.attempt_push(conn, queue_id, repo_root) is True
+
+    row = conn.execute("SELECT status, attempts FROM github_push_queue WHERE id = ?", (queue_id,)).fetchone()
+    assert row["status"] == "pushed"
+    assert row["attempts"] == 2  # one failed + one succeeded, both recorded
+
+    # The bare "remote" genuinely has the commit -- not just a local status flag.
+    remote_log = git_service._run(["log", "--oneline", "main"], cwd=bare_remote)
+    assert commit.commit_hash[:7] in remote_log.stdout
+
+    # A further drain call (e.g. the next periodic timer tick) must be a
+    # true no-op: already 'pushed', never re-pushed, never duplicated.
+    assert github_sync_service.attempt_push(conn, queue_id, repo_root) is True
+    row = conn.execute("SELECT status, attempts FROM github_push_queue WHERE id = ?", (queue_id,)).fetchone()
+    assert row["attempts"] == 2  # unchanged -- the already-pushed short-circuit never re-attempts
+    remote_log_after = git_service._run(["log", "--oneline", "main"], cwd=bare_remote)
+    assert remote_log_after.stdout == remote_log.stdout  # no duplicate commit on the remote either
+
+
 def test_queue_refuses_to_push_through_a_different_repo(seeded_conn, tmp_path):
     conn = seeded_conn
     recorded_repo = tmp_path / "recorded"

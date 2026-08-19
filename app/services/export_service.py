@@ -7,7 +7,7 @@ import json
 import sqlite3
 from pathlib import Path
 
-from app.services import analytics_service, progression_service as prog, streak_service
+from app.services import progression_service as prog, streak_service
 
 
 def _collect(conn: sqlite3.Connection) -> dict:
@@ -30,7 +30,6 @@ def _collect(conn: sqlite3.Connection) -> dict:
         "activity_streak": streak_service.current_activity_streak(conn),
         "best_activity_streak": streak_service.best_activity_streak(conn),
         "on_schedule_streak": streak_service.on_schedule_streak(conn),
-        "practice_readiness": analytics_service.topic_readiness(conn),
         "curriculum_days": days,
         "unique_problems_solved": problems_solved,
         "reflections": reflections,
@@ -68,15 +67,6 @@ def export_markdown(conn: sqlite3.Connection, out_path: Path) -> Path:
         f"- Projected finish: {data['projected_finish']}",
         f"- Activity streak: {data['activity_streak']} (best {data['best_activity_streak']})",
         f"- On-schedule streak: {data['on_schedule_streak']}",
-        "",
-        "## Practice Readiness (not a hiring prediction — see docs/DATA_MODEL.md)",
-        "",
-    ]
-    for topic, pct in sorted(data["practice_readiness"].items(), key=lambda kv: -kv[1]):
-        filled = round(pct / 10)
-        bar = "█" * filled + "░" * (10 - filled)
-        lines.append(f"- {topic:20s} {bar} {pct}%")
-    lines += [
         "",
         "## Unique Problems Solved (Java, fresh Accepted)",
         "",

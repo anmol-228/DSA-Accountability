@@ -364,8 +364,13 @@ class ExerciseTaskDialog(QDialog):
             QMessageBox.warning(self, "VS Code", message)
 
     def _on_open_folder(self) -> None:
+        # Opens the repo root (matching _on_open_vscode's workspace_root),
+        # not the exercise's own subfolder -- VS Code's window-reuse only
+        # kicks in for a folder that's already open. Opening a different
+        # subfolder per exercise defeated it, piling up a separate window
+        # per exercise instead of reusing the one DSA-135 window.
         from app.services import vscode_service
-        ok, message = vscode_service.open_folder_in_vscode(self.source_path.parent)
+        ok, message = vscode_service.open_folder_in_vscode(self.repo_root)
         if not ok:
             QMessageBox.warning(self, "Open Folder", message)
 

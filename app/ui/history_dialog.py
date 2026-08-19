@@ -1,11 +1,11 @@
-"""History / calendar view + practice readiness (spec sections 51, 55)."""
+"""History / calendar view (spec section 55)."""
 from __future__ import annotations
 
 from PySide6.QtWidgets import QDialog, QHBoxLayout, QLabel, QTableWidget, QTableWidgetItem, QVBoxLayout
 
-from app.services import analytics_service, progression_service as prog, streak_service
-from app.ui.theme import Spacing, get_palette
-from app.ui.widgets import Divider, SlimProgressBar, metadata_label, section_label
+from app.services import progression_service as prog, streak_service
+from app.ui.theme import Spacing
+from app.ui.widgets import Divider, metadata_label, section_label
 
 
 class HistoryDialog(QDialog):
@@ -33,22 +33,6 @@ class HistoryDialog(QDialog):
         summary_row.addWidget(metadata_label(f"On-schedule streak · {streak_service.on_schedule_streak(conn)}"))
         summary_row.addStretch()
         layout.addLayout(summary_row)
-        layout.addWidget(Divider())
-
-        layout.addWidget(section_label("PRACTICE READINESS — not a hiring prediction"))
-        readiness = analytics_service.topic_readiness(conn)
-        for topic, pct in sorted(readiness.items(), key=lambda kv: -kv[1])[:8]:
-            row = QHBoxLayout()
-            label = QLabel(topic.replace("_", " ").title())
-            label.setFixedWidth(140)
-            row.addWidget(label)
-            bar = SlimProgressBar(get_palette(), height=6)
-            bar.setValue(pct)
-            row.addWidget(bar)
-            pct_label = metadata_label(f"{pct:.0f}%")
-            pct_label.setFixedWidth(36)
-            row.addWidget(pct_label)
-            layout.addLayout(row)
         layout.addWidget(Divider())
 
         layout.addWidget(section_label("CURRICULUM DAYS"))

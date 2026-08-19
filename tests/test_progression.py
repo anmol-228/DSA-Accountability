@@ -37,6 +37,33 @@ def test_all_135_original_dates_consecutive_and_correct(seeded_conn):
         assert dt.date.fromisoformat(r["original_due_date"]) == expected
 
 
+def test_canonical_strict_anchor_2026_08_16_maps_all_135_days_correctly(conn):
+    """The locked strict-135 canonical anchor: Day 01 = 2026-08-16, Day 135 =
+    2026-12-28, every day in between exactly consecutive. Distinct from
+    test_all_135_original_dates_consecutive_and_correct (which exercises the
+    conftest seeded_conn fixture's own reference anchor, 2026-08-15,
+    unrelated to which date is currently canonical for real production)."""
+    schedule_service.set_start_date(conn, dt.date(2026, 8, 16))
+    curriculum_service.seed_curriculum(conn)
+    rows = conn.execute(
+        "SELECT day_number, original_due_date FROM curriculum_days ORDER BY day_number"
+    ).fetchall()
+    assert len(rows) == 135
+    assert dt.date.fromisoformat(rows[0]["original_due_date"]) == dt.date(2026, 8, 16)
+    assert dt.date.fromisoformat(rows[-1]["original_due_date"]) == dt.date(2026, 12, 28)
+    seen_dates = set()
+    for i, r in enumerate(rows):
+        assert r["day_number"] == i + 1
+        expected = dt.date(2026, 8, 16) + dt.timedelta(days=i)
+        actual = dt.date.fromisoformat(r["original_due_date"])
+        assert actual == expected
+        assert actual not in seen_dates  # no duplicate dates
+        seen_dates.add(actual)
+    assert conn.execute(
+        "SELECT value FROM settings WHERE key='schedule_version'"
+    ).fetchone()[0] == "start-2026-08-16-v1"
+
+
 def test_before_canonical_start_delay_is_zero_not_negative(seeded_conn):
     """A fresh install queried before the canonical start date (e.g. this
     repair itself, performed before the 2026-08-15 start) must
@@ -70,7 +97,7 @@ def test_reschedule_original_dates_is_idempotent_across_repeated_calls(seeded_co
 
 @pytest.mark.parametrize(
     "start",
-    [dt.date(2026, 8, 15), dt.date(2027, 1, 1), dt.date(2027, 6, 15)],
+    [dt.date(2026, 8, 15), dt.date(2026, 8, 16), dt.date(2027, 1, 1), dt.date(2027, 6, 15)],
 )
 def test_user_selected_start_date_produces_exactly_135_consecutive_days(conn, start):
     schedule_service.set_start_date(conn, start)

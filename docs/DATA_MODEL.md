@@ -34,9 +34,12 @@ rather than reading a cached "current day" integer anywhere. Every other
 piece of state (streaks, revisions, reminders) is derived *from* that
 query, never the other way around. See `app/services/progression_service.py`.
 
-## Practice Readiness formula
+## Practice Readiness formula (not currently surfaced in the UI)
 
-Computed on demand (not stored) from, per topic: completion rate x
-independent-solve ratio x confidence distribution (Green weighted highest)
-x revision performance x recency decay. See `export_service.py` for the
-exact aggregation used in exports; the dashboard renders the same figures.
+`analytics_service.topic_readiness()` computes, on demand and not stored,
+per topic: completion rate x independent-solve ratio x confidence
+distribution (Green weighted highest) x revision performance x recency
+decay. The function is real and unit-tested, but as of 1.1.1 it is not
+called from the History dialog or the progress export -- topic/mastery
+framing doesn't fit a strict day-by-day product regardless of how honestly
+the number is computed. Kept in case a future surface needs it.

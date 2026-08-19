@@ -13,10 +13,25 @@ closes that gap structurally rather than relying on memory.
 """
 from __future__ import annotations
 
+import json
 import sqlite3
 from pathlib import Path
 
-from app.services import git_service, progression_service as prog, schedule_service
+from app import config
+from app.services import git_service, github_sync_service, progression_service as prog, schedule_service
+
+
+def _push_committed_work(conn: sqlite3.Connection, commit_id: int, repo_root: Path) -> str:
+    """Mirrors pipeline_service._push_committed_work (kept local rather than
+    imported to avoid a circular import: pipeline_service already imports
+    this module)."""
+    if not github_sync_service.auto_push_enabled(conn):
+        return "disabled"
+    if not git_service.has_remote(repo_root):
+        return "local_only"
+    queue_id = github_sync_service.enqueue_push(conn, commit_id)
+    pushed = github_sync_service.attempt_push(conn, queue_id, repo_root)
+    return "pushed" if pushed else "queued"
 
 
 def _all_days(conn: sqlite3.Connection) -> list[sqlite3.Row]:
@@ -144,10 +159,25 @@ def sync_and_commit(conn: sqlite3.Connection, repo_root: Path) -> dict:
     if not changed_files:
         return {"changed": False}
 
-    commit_result = git_service.safe_commit(
-        repo_root, changed_files, "docs: sync PROGRESS.md/COMPLETED.md with real completion state"
-    )
-    return {"changed": True, "commit": commit_result.success, "commit_error": commit_result.error}
+    message = "docs: sync PROGRESS.md/COMPLETED.md with real completion state"
+    commit_result = git_service.safe_commit(repo_root, changed_files, message)
+    result: dict = {"changed": True, "commit": commit_result.success,
+                     "commit_error": commit_result.error, "push": "not_attempted"}
+
+    if commit_result.success:
+        now = config.now_local().isoformat()
+        cur = conn.execute(
+            "INSERT INTO git_commits (repo_path, commit_hash, message, files_json, task_id, created_at) "
+            "VALUES (?, ?, ?, ?, NULL, ?)",
+            (str(repo_root), commit_result.commit_hash, message,
+             json.dumps([str(f) for f in changed_files]), now),
+        )
+        commit_id = cur.lastrowid
+        conn.commit()
+        assert commit_id is not None
+        result["push"] = _push_committed_work(conn, commit_id, repo_root)
+
+    return result
 
 
 def check_docs_in_sync(conn: sqlite3.Connection, repo_root: Path) -> list[str]:

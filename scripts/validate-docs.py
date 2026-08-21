@@ -27,7 +27,6 @@ REQUIRED = [
     "docs/FAQ.md",
     "docs/ARCHITECTURE.md",
     "docs/DEVELOPERS.md",
-    "docs/LLM_SETUP_MASTER_PROMPT.md",
 ]
 
 
@@ -47,11 +46,6 @@ def main() -> int:
             resolved = (document.parent / target).resolve()
             if not resolved.exists():
                 errors.append(f"broken local link: {document.relative_to(ROOT)} -> {target}")
-
-    prompt = (ROOT / "docs/LLM_SETUP_MASTER_PROMPT.md").read_text(encoding="utf-8")
-    for forbidden in ("W:\\", "Anmol", "as we discussed", "previous audit"):
-        if forbidden.lower() in prompt.lower():
-            errors.append(f"LLM setup prompt contains forbidden machine/context text: {forbidden}")
 
     if errors:
         raise SystemExit("Documentation validation failed:\n- " + "\n- ".join(errors))

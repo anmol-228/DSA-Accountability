@@ -38,7 +38,7 @@ versioning.
 - Per-user start date during First Run with Day 135 derived automatically.
 - Configurable learner repository name/path and optional GitHub remote.
 - Safe assisted setup, prerequisite, test, build, and release-packaging scripts.
-- Complete manual, developer, security, troubleshooting, and LLM-assisted docs.
+- Complete manual, developer, security, and troubleshooting docs.
 - Windows CI and public-portability checks.
 
 ### Improved

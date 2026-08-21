@@ -126,15 +126,6 @@ API binds to `127.0.0.1` and requires the locally generated pairing token.
 Never publish that token or copy a live WAL database as a raw single file; use
 the app's SQLite backup function.
 
-## LLM-assisted setup
-
-If you prefer guided setup, copy
-[the generic setup master prompt](docs/LLM_SETUP_MASTER_PROMPT.md) into a
-capable coding agent with access to your downloaded repository. It requires
-safe inspection, isolated tests, explicit permission for privileged installs,
-and user handoff for Chrome/GitHub interactions. Manual instructions remain
-complete and do not require an LLM.
-
 ## License
 
 Released under the [MIT License](LICENSE).
